@@ -1,3 +1,28 @@
+# Endpoints
+
+All Records
+```
+https://covid19-lk.herokuapp.com/all/0
+
+```
+
+Last N Records (N is integer)
+```
+https://covid19-lk.herokuapp.com/all/N
+
+```
+
+Last (Latest) Record
+```
+https://covid19-lk.herokuapp.com/all/1
+
+```
+
+Update database (if there's new data available at https://hpb.health.gov.lk/en/api-documentation)
+```
+https://covid19-lk.herokuapp.com/ping
+
+```
 # Getting Started
 
 First create a new account, new database in mongodb atlas cloud and get the connection string, use this [video](https://www.youtube.com/watch?v=jzZwarOxNCA) as reference. Add your connection string to `app.config["MONGO_URI"]` in `app.py`
